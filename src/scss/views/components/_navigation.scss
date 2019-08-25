@@ -1,4 +1,6 @@
 .navigation {
+  max-height: calc(100% - #{$controls-height});
+  overflow-y: auto;
   ul {
     @include reset-list();
   }
