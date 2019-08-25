@@ -1,0 +1,25 @@
+$card-radius: 10px;
+
+.card {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  border-radius: $card-radius;
+}
+
+.card__sidebar {
+  width: 100%;
+  max-width: 150px;
+  background: transparentize($light-black, .1);
+  border-top-left-radius: $card-radius;
+  border-bottom-left-radius: $card-radius;
+}
+
+.card__content {
+  width: 100%;
+  border-top-right-radius: $card-radius;
+  border-bottom-right-radius: $card-radius;
+  background: $dark-white;
+  padding: 11px 20px 11px 15px;
+}
