@@ -1,0 +1,25 @@
+{% extends './layouts/page.twig' %}
+
+{% import './utils/macros.twig' as macros %}
+
+{% block pageContent %}
+  {% set menuItems = [
+    {
+      link: {
+      name: 'Main Page',
+      url: '/main.html'
+    },
+      isActive: true
+    },
+    {
+      link: {
+      name: 'Style Guide',
+      url: '/styleguide.html'
+    }
+    }
+  ] %}
+  <div class="index-page" style="text-align: center;">
+    <h1>Pages</h1>
+    {{ macros.renderMenu(menuItems) }}
+  </div>
+{% endblock %}

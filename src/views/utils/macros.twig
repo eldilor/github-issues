@@ -1,0 +1,21 @@
+{% macro renderMenu(menuItems, class = '') %}
+  {% if menuItems %}
+    <ul class="{{ class }}">
+      {% for menuItem in menuItems %}
+        <li
+          class="{{ menuItem.children ? 'menu-item-has-children' : '' }} {{ menuItem.isActive ? 'current-menu-item' : '' }}">
+          <a href="{{ menuItem.link.url }}">
+            {{ menuItem.link.name }}
+          </a>
+          {{ _self.renderMenu(menuItem.children) }}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}
+
+{% macro renderFigure(image, class = '') %}
+  <figure style="background-image: url({{ image.src }});" class="{{ class }}">
+    <img src="{{ image.src }}" alt="{{ image.alt }}">
+  </figure>
+{% endmacro %}

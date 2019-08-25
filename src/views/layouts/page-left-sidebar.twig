@@ -1,0 +1,13 @@
+{% extends './base-page.twig' %}
+{% block pageWrapper %}
+  <div class="container">
+    <div class="row">
+      <aside class="col-md-4">
+        {% block pageSidebar %}{% endblock %}
+      </aside>
+      <article class="col-md-8">
+        {% block pageContent %}{% endblock %}
+      </article>
+    </div>
+  </div>
+{% endblock %}

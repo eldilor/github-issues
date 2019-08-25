@@ -1,0 +1,101 @@
+*, html, body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+h1, .h1 {
+
+}
+
+h2, .h2 {
+
+}
+
+h3, .h3 {
+
+}
+
+h4, .h4 {
+
+}
+
+h5, .h5 {
+
+}
+
+h6, .h6 {
+
+}
+
+p {
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  a {
+
+  }
+}
+
+a {
+  &:hover {
+    //color: $primary-accent;
+  }
+}
+
+ul {
+  li {
+
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+form {
+  label {
+    &.error {
+
+    }
+  }
+
+  input, textarea {
+    @include placeholder(#000);
+    @include no-apperance();
+    @include reset-input();
+
+    &.error {
+
+    }
+  }
+
+  input {
+
+  }
+
+  textarea {
+
+  }
+
+  input[type="radio"] {
+
+  }
+
+  input[type="checkbox"] {
+
+  }
+
+  select {
+
+  }
+
+  button, input[type="submit"] {
+
+  }
+}

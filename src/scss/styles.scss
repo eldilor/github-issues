@@ -1,0 +1,16 @@
+// LIBS
+@import "../../node_modules/normalize.css/normalize.css";
+@import "../../node_modules/bootstrap-4-grid/scss/grid";
+// UTILS
+@import "utils/fonts";
+@import "utils/icons";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/typography";
+@import "utils/global";
+// PARTIALS
+@import "views/partials/header";
+@import "views/partials/footer";
+// COMPONENTS
+// VIEWS
+@import "views/main";

@@ -1,0 +1,147 @@
+@mixin typography($font-size, $font-weight: 500, $line-height: 1.1, $letter-spacing: normal) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin transition($time: .3s, $elements: all, $func: ease-in-out) {
+  -webkit-transition: $time $elements $func;
+  -moz-transition: $time $elements $func;
+  -ms-transition: $time $elements $func;
+  -o-transition: $time $elements $func;
+  transition: $time $elements $func;
+}
+
+@mixin placeholder($color) {
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+}
+
+@mixin selection($color) {
+  ::-moz-selection {
+    background: $color;
+  }
+  ::selection {
+    background: $color;
+  }
+}
+
+@mixin reset-button() {
+  text-decoration: none;
+  outline: none;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+@mixin reset-list() {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+@mixin no-apperance() {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@mixin reset-input() {
+  box-shadow: none;
+  outline: none;
+  border-radius: 0;
+  &::-ms-clear {
+    display: none;
+  }
+}
+
+@mixin icon-font() {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin ellipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin disable-google-maps-controls() {
+  .gm-style-mtc, .gm-style > button, .gm-svpc, a > div > img, .gm-style-cc, .gmnoprint {
+    display: none;
+  }
+}
+
+@mixin media($size) {
+  @media only screen and ($size) {
+    @content;
+  }
+}
+
+@mixin media-xs-down() {
+  @media only screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin media-sm-up() {
+  @media only screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin media-sm-down() {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin media-md-up() {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-md-down() {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin media-lg-up() {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin media-lg-down() {
+  @media only screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin media-xl() {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
