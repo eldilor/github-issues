@@ -1,0 +1,12 @@
+.controls {
+  @include reset-list();
+  display: flex;
+  padding: 15px;
+  background: $light-black;
+  border-top-left-radius: $card-radius;
+
+  li {
+    margin-right: 9px;
+    display: flex;
+  }
+}

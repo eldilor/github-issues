@@ -3,3 +3,46 @@
   background-size: cover;
   background-position: center;
 }
+
+.btn {
+  @include transition(.2s);
+  @include reset-button();
+  padding: 0;
+}
+
+.btn-small {
+  font-size: 10px;
+}
+
+.btn-circle {
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+}
+
+.btn-danger {
+  background: $danger;
+  color: $white;
+
+  &:hover {
+    background: darken($danger, 10);
+  }
+}
+
+.btn-warning {
+  background: $warning;
+  color: $white;
+
+  &:hover {
+    background: darken($warning, 10);
+  }
+}
+
+.btn-success {
+  background: $success;
+  color: $white;
+
+  &:hover {
+    background: darken($success, 10);
+  }
+}
