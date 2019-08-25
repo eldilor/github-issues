@@ -1,8 +1,11 @@
 .issues {
   time {
+    &:first-of-type {
+      margin-top: 0;
+    }
     color: $grey;
     font-size: 12px;
-    margin-bottom: 9px;
+    margin-bottom: 7px;
     margin-top: 10px;
     display: block;
   }
@@ -14,17 +17,17 @@
   li {
     font-size: 15px;
     color: $black;
-    padding: 13px 14px;
+    padding: 9px 12px 7px;
     background: $white;
     border-radius: 5px;
     border: 1px solid $light-grey;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
   }
 
   button {
-
+    margin-top: 2px;
   }
 }
