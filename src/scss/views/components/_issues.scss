@@ -1,0 +1,30 @@
+.issues {
+  time {
+    color: $grey;
+    font-size: 12px;
+    margin-bottom: 9px;
+    margin-top: 10px;
+    display: block;
+  }
+}
+
+.issues__list {
+  @include reset-list();
+
+  li {
+    font-size: 15px;
+    color: $black;
+    padding: 13px 14px;
+    background: $white;
+    border-radius: 5px;
+    border: 1px solid $light-grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+
+  button {
+
+  }
+}

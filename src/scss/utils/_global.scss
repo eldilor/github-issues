@@ -20,6 +20,34 @@
   height: 1em;
 }
 
+.btn-star {
+  svg {
+    @include transition(.1s, fill);
+    fill: $white;
+    stroke: $light-grey;
+    stroke-width: 1px;
+  }
+
+  &:hover {
+    svg {
+      fill: darken($white, 5);
+    }
+  }
+}
+
+.btn-star--active {
+  svg {
+    fill: $dark-blue;
+    stroke: transparent;
+  }
+
+  &:hover {
+    svg {
+      fill: lighten($dark-blue, 20);
+    }
+  }
+}
+
 .btn-danger {
   background: $danger;
   color: $white;
