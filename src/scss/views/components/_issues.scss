@@ -31,3 +31,40 @@
     margin-top: 2px;
   }
 }
+
+.issues__star-checkbox {
+  display: none;
+
+  & + label {
+
+    margin-top: 2px;
+    margin-left: 5px;
+    cursor: pointer;
+
+    svg {
+      @include transition(.1s, fill);
+      fill: $white;
+      stroke: $light-grey;
+      stroke-width: 1px;
+    }
+
+    &:hover {
+      svg {
+        fill: darken($white, 5);
+      }
+    }
+  }
+
+  &:checked + label {
+    svg {
+      fill: $dark-blue;
+      stroke: transparent;
+    }
+
+    &:hover {
+      svg {
+        fill: lighten($dark-blue, 20);
+      }
+    }
+  }
+}
