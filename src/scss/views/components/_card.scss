@@ -23,3 +23,19 @@
   max-height: 100%;
   overflow-y: auto;
 }
+
+@include media-sm-down() {
+  .card {
+    flex-direction: column;
+    height: auto;
+  }
+  .card__sidebar {
+    max-width: 100%;
+    border-top-right-radius: $card-radius;
+    border-bottom-left-radius: 0;
+  }
+  .card__content {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: $card-radius;
+  }
+}

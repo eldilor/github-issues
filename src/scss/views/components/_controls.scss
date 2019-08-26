@@ -11,3 +11,9 @@
     display: flex;
   }
 }
+
+@include media-sm-down() {
+  .controls {
+    border-top-right-radius: $card-radius;
+  }
+}

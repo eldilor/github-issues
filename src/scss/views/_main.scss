@@ -3,9 +3,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
 
   .card {
     max-width: 651px;
     max-height: 500px;
+  }
+}
+
+@include media-sm-down() {
+  .main-page {
+    .card {
+      max-width: 90%;
+      max-height: 80%;
+    }
   }
 }
